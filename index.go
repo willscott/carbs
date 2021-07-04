@@ -15,10 +15,13 @@ type IndexCodec int
 
 // IndexCodec table is a first var-int in carbs indexes
 const (
-	IndexHashed IndexCodec = iota + 0x300000
-	IndexSorted
+	IndexSorted IndexCodec = 0x0400 // as per https://github.com/multiformats/multicodec/pull/220
+
+	// TODO: unexport these before the final release, probably
+	IndexHashed IndexCodec = 0x300000 + iota
 	IndexSingleSorted
 	IndexGobHashed
+	IndexInsertion
 )
 
 // IndexCls is a constructor for an index type
