@@ -1,6 +1,8 @@
 🍔 Carbs
 ===
 
+*Note*: This repository has been integrated into core car functionality. It is deprecated in favor of [car/v2/index](https://github.com/ipld/go-car/tree/master/v2/index).
+
 Car Blockstore provides a read-only blockstore interface directly reading out of a car file.
 
 

@@ -41,6 +41,7 @@ type Record struct {
 	Idx uint64
 }
 
+// Deprecated: Prefer go-car/v2/index.Index
 // Index provides an interface for figuring out where in the car a given cid begins
 type Index interface {
 	Codec() IndexCodec
